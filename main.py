@@ -2,13 +2,13 @@ from flask import Flask, render_template, jsonify, request
 from flask_pymongo import PyMongo
 import openai
 
-openai.api_key = "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"
+openai.api_key = ""
 
 
 
 
 app = Flask(__name__)
-app.config["MONGO_URI"] = "mongodb+srv://vs27345:xVPa9q7ZRK6Thd6n@cluster0.7a0gsz7.mongodb.net/clone"
+app.config["MONGO_URI"] = ""
 mongo = PyMongo(app)
 
 @app.route("/")
